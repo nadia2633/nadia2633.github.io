@@ -1,18 +1,46 @@
 /* Set the scroll behavior to smooth so that when you click the in the header, the screen scrolls down rather than jumps */ html { scroll-behavior: smooth; } /* Set the margin to 0 to make sure the page stretches all the way to the edge of the browser window. */ body { margin: 0; }
 header,footer{
-  background-color: #ff96d2;
+  background-color: #e6e6ff;
   text-align: left;
 }
 header{
   font-family: Rakkas;
-  color: #82d7ff;
+  color: #b30000;
   min-height: 100vh;
   display:flex;
 }
 a {
-  color: #82d7ff;
+  color: #b30000;
 }
 main { display: grid; grid-template-columns: repeat(auto-fill, minmax(40%, 1fr) ) ; grid-gap: 20px; margin-top: 44px; justify-items: center; justify-content: center; align-items: stretch; align-content: center; }
+
+.buttonBox {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+.myButton {
+  border-radius: 28px;
+  border: 1px solid #b30000;
+  cursor: pointer;
+  color: #b30000;
+  font-size: 20px;
+  padding: 16px 31px;
+  text-decoration: none;
+  margin: 1.69em auto;
+}
+
+.myButton:hover {
+    background-color:#e69708;
+}
+.myButton:active {
+    position:relative;
+    top:1px;
+}
+
+
+
+
 
 h1 { font-family: 'Jost'; font-size: calc(1em + 3vw); padding-bottom: .67em; border-bottom: 1px solid; line-height: 1.3; }
 
@@ -22,7 +50,7 @@ h2 {
   font-weight: 600;
   letter-spacing: 0.3px;
   text-align: left;
-  color: #82d7ff;
+  color: #e60000;
   padding: 10px 0px 10px 10px;
 }
 
@@ -31,50 +59,27 @@ img {
   height: 50vh;
 object-fit: cover;
 }
-  .wrapper { max-width: 1150px; margin: auto; padding: 50px; display: block; } .bio { color: #82d7ff; font-size: 24px; font-family: 'Rakkas'; }
+  .wrapper { max-width: 1150px; margin: auto; padding: 50px; display: block; } .bio { color: #e60000; font-size: 24px; font-family: 'Rakkas'; }
 
-.recipe {
-  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.5);
+.project {
+
+  box-shadow: 0 0px 1px 0 rgb(0 0 0 / 40%);
   width: 100%;
-}
-
-.a {
 
 }
 
-.c {
 
-}
-
-.time {
-  padding-left: 10px;
-  padding-top: 10px;
-  width: 20px;
-  height: auto;
-}
-
-.mins {
-  display: inline-block;
-  font-family: 'Jost';
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.3px;
-  text-align: left;
-  color: #4a4a4a;
-  position: relative;
-  bottom: 5px;
-}
 
 .description {
   font-family: 'Rakkas';
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.29;
   letter-spacing: 0.1px;
   text-align: left;
   color: #4a4a4a;
-  padding: 10px 0px 10px 10px;
-  border-top: 1px solid #4a4a4a;
+  padding: 0px 20px 20px 20px;
+
 }
 
 .logo {
@@ -89,8 +94,14 @@ object-fit: cover;
   margin: auto;
 }
 
-footer {
-  margin-top: 44px;
+footer div {
+  height: 100%;
+  font-family: 'Rakkas', sans-serif;
+  font-size: 14px;
+  display: flex;
+  align-content: center;
+  padding: 10px 20px;
+  color: rgba(180, 0, 0, 0.5);
 }
 @media all and (max-width:700px) {
   main {
